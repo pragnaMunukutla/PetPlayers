@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/card_view_rl">
+
+            <TextView
+                android:id="@+id/dictwordtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ic_dict_padding"
+                android:text="WORD"
+                android:textColor="@color/album_title"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:textSize="16sp"
+                android:layout_marginRight="2dp"
+                tools:fontFamily="sans-serif" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dictwordtitle"
+                android:padding="@dimen/ic_dict_padding">
+
+                <ImageView
+                    android:id="@+id/dictwordaudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_volume" />
+
+                <ImageView
+                    android:id="@+id/dicimportant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/dictwordaudio"
+                    android:layout_marginRight="@dimen/ic_dict_icons_margin"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_star" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dictworddef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dictwordtitle"
+                android:padding="@dimen/album_title_padding"
+                android:textColor="@color/album_title"
+                android:textSize="@dimen/dict_definition"
+                android:text="Definition"
+                android:typeface="sans"
+                tools:fontFamily="sans-serif"/>
+        </RelativeLayout>
+
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="15dp"
+            tools:context="io.supercharge.shimmeringlayout.MainActivity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/title"
+                    android:layout_margin="9dp"
+                    android:background="@color/shimmer_color"/>
+
+                <View
+                    android:id="@+id/description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_margin="8dp"
+                    android:layout_below="@+id/title"
+                    android:background="@color/shimmer_color"/>
+
+
+                <View
+                    android:id="@+id/description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_margin="8dp"
+                    android:layout_below="@+id/description1"
+                    android:background="@color/shimmer_color"/>
+
+                <View
+                    android:id="@+id/description3"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_margin="8dp"
+                    android:layout_below="@+id/description2"
+                    android:background="@color/shimmer_color"/>
+
+            </RelativeLayout>
+
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

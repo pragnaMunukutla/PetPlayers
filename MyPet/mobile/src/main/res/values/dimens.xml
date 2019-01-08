@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">48dp</dimen>
+    <dimen name="captions_margin">16dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="title_text_size">18dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin_top">2dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">3dp</dimen>
+    <dimen name="dict_word_height">160dp</dimen>
+    <dimen name="album_cover_height">160dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="dictword_title">15dp</dimen>
+    <dimen name="dict_definition">12dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+
+    <dimen name="ic_volume_width">20dp</dimen>
+    <dimen name="ic_volume_height">30dp</dimen>
+
+    <dimen name="ic_dict_padding">5dp</dimen>
+
+    <dimen name="ic_dict_icons_margin">8dp</dimen>
+
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+    <dimen name="ic_album_overflow_margin_right">10dp</dimen>
+    <dimen name="ic_vocab_header_margin">4dp</dimen>
+    <dimen name="ic_vocab_header_leftmargin">8dp</dimen>
+</resources>

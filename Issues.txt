@@ -1,0 +1,13 @@
+#issues 
+
+2. Buttons background animation - ripple effect 
+4. load 3 sec video and add 15 sec srt, player keeps playing - posted online
+7. DialogPlus select and cancel buttons alignment
+
+
+
+3. Play to Pause ; pause to play animation --------------------- done
+5. add animation to underline view in the closed caption. ------------- done
+1. ReLoading on screen orientation change. ------------- done
+6. DialogPlus launch and close animation time                 ----------- done
+8. On screentime out, player gets paused, on opening player starts from zero. ------ done

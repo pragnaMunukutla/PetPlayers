@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_margin"
+    android:visibility="gone"
+    android:background="#80000000"
+    android:id="@+id/worddef_content_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PlayerActivity"
+    tools:showIn="@layout/word_definition">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dictwordtitle"
+            android:id="@+id/dictfooter"
+            android:orientation="horizontal"
+            android:onClick="onClickVocabLinearLayout">
+            <TextView
+                android:id="@+id/vocabtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vocabulary"
+                android:layout_marginTop="@dimen/ic_vocab_header_margin"
+                android:layout_marginLeft="@dimen/ic_vocab_header_leftmargin"
+                android:layout_weight="3"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:layout_marginRight="2dp"
+                app:fontFamily="sans-serif"
+                tools:fontFamily="sans-serif" />
+            <ImageView
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ic_vocab_header_margin"
+                android:layout_marginRight="@dimen/ic_vocab_header_margin"
+                android:layout_toRightOf="@id/vocabtext"
+                android:src="@drawable/ic_clear"
+                android:onClick="closeVocabList"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/worddef_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</RelativeLayout>

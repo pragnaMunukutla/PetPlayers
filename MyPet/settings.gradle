@@ -1,0 +1,4 @@
+include ':mobile', ':tv', ':playerlibrary', ':base', ':base', ':instantapp', ':mobile:FilesLister',':mobile:dialogplus'
+gradle.ext.exoplayerRoot = 'mobile/ExoPlayer'
+gradle.ext.exoplayerModulePrefix = 'exoplayer-'
+apply from: new File(gradle.ext.exoplayerRoot, 'core_settings.gradle')
